@@ -1,0 +1,17 @@
+node_modules/
+build/
+dist/
+*.zip
+*.deb
+*.flatpak
+*.flatpak-builder/
+_build/
+.cache/
+.eslintcache
+coverage/
+*.log
+.DS_Store
+*~
+__pycache__/
+.idea/
+.vscode/

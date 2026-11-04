@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="io.github.persian_calendar_gnome.shell" path="/io/github/persian-calendar-gnome/shell/">
+    <key name="calendar-mode" type="s">
+      <default>'solar'</default>
+      <choices><choice value="solar"/><choice value="gregorian"/></choices>
+      <summary>نوع تقویم پنجرهٔ تاریخ</summary>
+    </key>
+    <key name="date-format" type="s">
+      <default>'long'</default>
+      <choices><choice value="numeric"/><choice value="medium"/><choice value="long"/></choices>
+      <summary>قالب تاریخ</summary>
+    </key>
+    <key name="persian-digits" type="b"><default>true</default><summary>اعداد فارسی</summary></key>
+    <key name="show-time" type="b"><default>true</default><summary>نمایش ساعت</summary></key>
+    <key name="show-events" type="b"><default>true</default><summary>نمایش مناسبت‌ها</summary></key>
+  </schema>
+</schemalist>

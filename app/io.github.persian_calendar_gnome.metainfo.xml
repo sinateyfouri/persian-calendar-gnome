@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>io.github.persian_calendar_gnome</id>
+  <name>Persian Calendar</name>
+  <summary>Jalali calendar and Gregorian date converter</summary>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-only</project_license>
+  <launchable type="desktop-id">io.github.persian_calendar_gnome.desktop</launchable>
+  <description><p>Browse the Jalali calendar in a native right-to-left interface. Find Iranian events and convert Jalali and Gregorian dates without changing the system calendar.</p></description>
+  <developer id="io.github.persian_calendar_gnome"><name>Persian Calendar Contributors</name></developer>
+  <content_rating type="oars-1.1"/>
+  <url type="homepage">https://github.com/persian-calendar-gnome/persian-calendar-gnome</url>
+  <releases><release version="0.1.0" date="2026-09-04"/></releases>
+</component>

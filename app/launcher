@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+set -euo pipefail
+launcher_path="$(readlink -f "${BASH_SOURCE[0]}")"
+package_dir="$(cd "$(dirname "$launcher_path")/.." && pwd)"
+exec gjs -m "$package_dir/app/main.js" "$@"

@@ -1,0 +1,14 @@
+{
+  "name": "persian-calendar-gnome",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "lint": "eslint .",
+    "check": "npm test && npm run lint"
+  },
+  "devDependencies": {
+    "eslint": "^9.0.0"
+  }
+}

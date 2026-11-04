@@ -1,0 +1,20 @@
+#!/usr/bin/make -f
+%:
+	dh $@
+
+override_dh_auto_build:
+	./scripts/build-extension.sh
+
+override_dh_auto_install:
+	mkdir -p debian/persian-calendar-gnome/usr/share/persian-calendar-gnome
+	cp -r app shared data debian/persian-calendar-gnome/usr/share/persian-calendar-gnome/
+	mkdir -p debian/persian-calendar-gnome/usr/bin
+	ln -s ../share/persian-calendar-gnome/app/launcher debian/persian-calendar-gnome/usr/bin/persian-calendar-gnome
+	mkdir -p debian/persian-calendar-gnome/usr/share/applications
+	cp app/io.github.persian_calendar_gnome.desktop debian/persian-calendar-gnome/usr/share/applications/
+	mkdir -p debian/persian-calendar-gnome/usr/share/icons/hicolor/scalable/apps
+	cp data/icons/io.github.persian_calendar_gnome.svg debian/persian-calendar-gnome/usr/share/icons/hicolor/scalable/apps/
+	mkdir -p debian/persian-calendar-gnome/usr/share/metainfo
+	cp app/io.github.persian_calendar_gnome.metainfo.xml debian/persian-calendar-gnome/usr/share/metainfo/
+	mkdir -p debian/persian-calendar-gnome/usr/share/gnome-shell/extensions
+	cp -r build/extension/persian-calendar@persian-calendar-gnome.github.io debian/persian-calendar-gnome/usr/share/gnome-shell/extensions/

@@ -1,0 +1,15 @@
+Source: persian-calendar-gnome
+Section: utils
+Priority: optional
+Maintainer: Persian Calendar Contributors <maintainers@example.invalid>
+Build-Depends: debhelper-compat (= 13), libglib2.0-bin, zip
+Standards-Version: 4.7.0
+Rules-Requires-Root: no
+Homepage: https://github.com/persian-calendar-gnome/persian-calendar-gnome
+
+Package: persian-calendar-gnome
+Architecture: all
+Depends: ${misc:Depends}, gjs, gir1.2-gtk-4.0, gir1.2-adw-1, gnome-shell (>= 46)
+Description: Persian calendar for GNOME Shell and GTK4
+ A right-to-left Jalali calendar, GNOME Shell panel extension,
+ Iranian events browser and date conversion application.

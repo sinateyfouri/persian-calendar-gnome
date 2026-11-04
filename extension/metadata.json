@@ -1,0 +1,9 @@
+{
+  "uuid": "persian-calendar@persian-calendar-gnome.github.io",
+  "name": "تقویم فارسی",
+  "description": "نمایش تاریخ و تقویم شمسی در نوار بالای گنوم",
+  "version": 1,
+  "shell-version": ["46", "50"],
+  "settings-schema": "io.github.persian_calendar_gnome.shell",
+  "url": "https://github.com/persian-calendar-gnome/persian-calendar-gnome"
+}

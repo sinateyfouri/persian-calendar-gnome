@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <rect x="12" y="18" width="104" height="98" rx="18" fill="#3584e4"/>
+  <path d="M12 44h104v18H12z" fill="#fff" opacity=".95"/>
+  <circle cx="38" cy="20" r="8" fill="#1c71d8"/><circle cx="90" cy="20" r="8" fill="#1c71d8"/>
+  <text x="64" y="98" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="42" fill="#fff">۱</text>
+</svg>

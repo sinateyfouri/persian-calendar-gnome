@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=تقویم فارسی
+Name[en]=Persian Calendar
+Comment=تقویم شمسی، مناسبت‌ها و تبدیل تاریخ
+Comment[en]=Jalali calendar, events and Gregorian date conversion
+Exec=persian-calendar-gnome
+Icon=io.github.persian_calendar_gnome
+Terminal=false
+Type=Application
+Categories=Office;Calendar;
+Keywords=calendar;persian;jalali;shamsi;تقویم;شمسی;
+StartupNotify=true

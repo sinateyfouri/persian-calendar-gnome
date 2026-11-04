@@ -1,0 +1,24 @@
+app-id: io.github.persian_calendar_gnome
+runtime: org.gnome.Platform
+runtime-version: '50'
+sdk: org.gnome.Sdk
+command: persian-calendar-gnome
+finish-args:
+  - --share=ipc
+  - --socket=fallback-x11
+  - --socket=wayland
+  - --device=dri
+modules:
+  - name: persian-calendar-gnome
+    buildsystem: simple
+    build-commands:
+      - mkdir -p /app/share/persian-calendar-gnome
+      - cp -r app shared data /app/share/persian-calendar-gnome/
+      - mkdir -p /app/bin
+      - ln -s ../share/persian-calendar-gnome/app/launcher /app/bin/persian-calendar-gnome
+      - install -Dm644 app/io.github.persian_calendar_gnome.desktop /app/share/applications/io.github.persian_calendar_gnome.desktop
+      - install -Dm644 app/io.github.persian_calendar_gnome.metainfo.xml /app/share/metainfo/io.github.persian_calendar_gnome.metainfo.xml
+      - install -Dm644 data/icons/io.github.persian_calendar_gnome.svg /app/share/icons/hicolor/scalable/apps/io.github.persian_calendar_gnome.svg
+    sources:
+      - type: dir
+        path: ..
